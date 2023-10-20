@@ -14,6 +14,22 @@ app.get("/resume", (req, res) => {
   res.redirect(301, process.env.AASHNAA_RESUME_URL);
 });
 
+app.get("/hms-video", (req, res) => {
+  res.redirect(301, process.env.AASHNAA_HMS_YT);
+});
+
+app.get("/ecomm-github", (req, res) => {
+  res.redirect(301, process.env.AASHNAA_E_COMM_GITHUB);
+});
+
+app.get("/gs-certificate", (req, res) => {
+  res.redirect(301, process.env.AASHNAA_GOLDMANSACHS_CERTIFICATE);
+});
+
+app.get("/pi-certificate", (req, res) => {
+  res.redirect(301, process.env.AASHNAA_PREPINSTA_CERTIFICATE);
+});
+
 app.all("*", (req, res) => {
   res.redirect("/");
 });
